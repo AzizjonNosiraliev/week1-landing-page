@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form>
+      <fieldset>
+        <legend>Registration Form</legend>
+
+        <input type="hidden" name="userID" value="8808" />
+
+        <input type="text" value="Admin" disabled />
+        <br /><br />
+        <label for="name">Name</label>
+        <br />
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter full name"
+          autofocus
+          required
+        />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter email"
+          autocomplete="email"
+          required
+        />
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter password"
+          required
+        />
+        <br /><br />
+        <label>Gender</label>
+        <br />
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" required />
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" required />
+        <br /><br />
+        <label for="skills">Skills</label>
+        <br />
+        <input type="checkbox" id="html" />
+        <label for="html">HTML</label>
+        <br />
+        <input type="checkbox" id="css" />
+        <label for="css">CSS</label>
+        <br />
+        <input type="checkbox" id="js" />
+        <label for="js">JavaScript</label>
+        <br /><br />
+        <label for="country">Country</label>
+        <br />
+        <select id="country">
+          <option>USA</option>
+          <option>Uzbekistan</option>
+        </select>
+        <br /><br />
+        <label>Residency</label>
+        <br />
+        <input type="text" value="New York City" readonly />
+        <br /><br />
+        <label for="about">About You</label>
+        <br />
+        <textarea id="about" placeholder="Write about yourself"></textarea>
+        <br /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
