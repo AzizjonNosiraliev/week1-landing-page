@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="full name" />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email address" required />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="password" required />
+      <br />
+      <label for="dob">Date of birth</label>
+      <input type="date" id="dob" />
+      <br />
+      <label for="country">Country</label>
+      <select id="country">
+        <option>USA</option>
+        <option>Uzbekistan</option>
+        <option>Russia</option>
+      </select>
+      <br />
+      <label>Gender</label>
+      <br />
+      <label for="male">male</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="female">female</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <br />
+      <label>Hobbies</label>
+      <br />
+      <!-- <label for="reading">reading</label>
+      <input type="checkbox" id="reading" />
+      <label for="playing tennis">playing tennis</label>
+      <input type="checkbox" id="playing tennis" />
+      <label for="travelling">travelling</label>
+      <input type="checkbox" id="travelling" /> -->
+
+      <input type="checkbox" id="reading" />
+      <label for="reading">reading</label>
+      <br />
+      <input type="checkbox" id="playing tennis" />
+      <label for="playing tennis">playing tennis</label>
+      <br />
+      <input type="checkbox" id="travelling" />
+      <label for="travelling">travelling</label>
+      <br />
+      <label for="about-me">About Me</label>
+      <br />
+      <textarea id="about-me" placeholder="tell us about yourself"></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Azizjon</td>
+        <td>24</td>
+        <td>Uzbekistan</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>30</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>Emma</td>
+        <td>26</td>
+        <td>Canada</td>
+      </tr>
+    </table>
+  </body>
+</html>
