@@ -20,6 +20,7 @@
         <input
           type="text"
           id="name"
+          name="name"
           placeholder="Enter full name"
           autofocus
           required
@@ -30,6 +31,7 @@
         <input
           type="email"
           id="email"
+          name="email"
           placeholder="Enter email"
           autocomplete="email"
           required
@@ -40,42 +42,69 @@
         <input
           type="password"
           id="password"
+          name="password"
           placeholder="Enter password"
           required
         />
         <br /><br />
-        <label>Gender</label>
+        <span>Gender</span>
         <br />
-        <label for="male">male</label>
-        <input type="radio" id="male" name="gender" required />
-        <label for="female">female</label>
-        <input type="radio" id="female" name="gender" required />
+        <label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          Male
+        </label>
+        <label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          Female
+        </label>
         <br /><br />
-        <label for="skills">Skills</label>
+        <span>Skills</span>
         <br />
-        <input type="checkbox" id="html" />
-        <label for="html">HTML</label>
+        <label>
+          <input type="checkbox" id="html" name="skills" value="HTML" />
+          HTML
+        </label>
         <br />
-        <input type="checkbox" id="css" />
-        <label for="css">CSS</label>
+        <label>
+          <input type="checkbox" id="css" name="skills" value="CSS" />
+          CSS
+        </label>
         <br />
-        <input type="checkbox" id="js" />
-        <label for="js">JavaScript</label>
+        <label>
+          <input type="checkbox" id="js" name="skills" value="JavaScript" />
+          JavaScript
+        </label>
         <br /><br />
         <label for="country">Country</label>
         <br />
-        <select id="country">
-          <option>USA</option>
-          <option>Uzbekistan</option>
+        <select id="country" name="country">
+          <option value="USA">USA</option>
+          <option value="Uzbekistan">Uzbekistan</option>
         </select>
         <br /><br />
-        <label>Residency</label>
+        <label for="residency">Residency</label>
         <br />
-        <input type="text" value="New York City" readonly />
+        <input
+          type="text"
+          id="residency"
+          name="residency"
+          value="New York City"
+          readonly
+        />
         <br /><br />
         <label for="about">About You</label>
         <br />
-        <textarea id="about" placeholder="Write about yourself"></textarea>
+        <textarea
+          id="about"
+          name="about"
+          placeholder="Write about yourself"
+        ></textarea>
         <br /><br />
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
