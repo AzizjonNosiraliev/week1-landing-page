@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="cars-page-style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1><span class="zhb">ZHB</span><span class="cars">cars</span></h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="parent">
+        <div class="container">
+          <img src="image/ferrari.webp" alt=" red ferrari" />
+          <!-- REVIEW: Alt text should be descriptive (e.g., "Red Ferrari 488 GTB") and avoid leading/trailing spaces. Also consider consistent filename casing for cross-OS deployments. -->
+          <div class="desc">
+            <h3 class="frari">Ferrari</h3>
+            <p>
+              Ferrari is an Italian luxury sports car maker known for sleek
+              design, high-performance engines, and racing heritage. Its cars
+              combine speed, precision handling, and bold styling for an
+              exciting driving experience.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="image/Lamborghini.avif" alt="green lamborghini" />
+          <!-- REVIEW: Consider a more descriptive alt (e.g., "Green Lamborghini Huracán"). File is CamelCased; using lowercase filenames helps avoid issues on Linux servers. -->
+          <div class="desc">
+            <h3 class="lambo">Lamborghini</h3>
+            <p>
+              Lamborghini is an Italian supercar brand known for dramatic
+              styling, powerful V10/V12 engines, and extreme performance. Its
+              cars are built for speed, sharp handling, and a bold, aggressive
+              presence.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="image/Porsche.jpg" alt="blue porsche 911" />
+          <!-- REVIEW: Same here — be consistent with filename case (prefer lowercase) and make alt text concise but informative. -->
+          <div class="desc">
+            <h3 class="porsh">Porsche</h3>
+            <p>
+              Porsche is a German sports car brand known for precision
+              engineering, balanced handling, and iconic models like the 911.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="image/bugatti.jpg" alt="yellow buggati chiron" />
+          <!-- REVIEW: Typo in alt text and visible content: "buggati" should be "Bugatti". Alt text should match correct spelling and be more descriptive (e.g., "Yellow Bugatti Chiron"). -->
+          <div class="desc">
+            <h3 class="bgati">Buggati</h3>
+            <!-- REVIEW: Spelling: 'Buggati' should be 'Bugatti'. Consider keeping visible text and class names consistent (e.g., class="bugatti"). -->
+            <p>
+              Bugatti is a French hypercar maker famed for extreme top speed,
+              luxurious craftsmanship, and record-breaking power.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2026 ZHB Cars</p>
+    </footer>
+  </body>
+  <!--
+    File: homework.html
+    Purpose: Simple cars showcase for Day 5 homework.
+    Notes for developers:
+      - Images are loaded from the local `image/` folder; check filename casing on Windows vs deployment.
+      - Stylesheet: `cars-page-style.css` — ensure this file exists and paths are correct when moving to other folders.
+      - Accessibility: consider fixing `<spam>` typos to `<span>`, improve alt text descriptions, and correct "Buggati" -> "Bugatti".
+      - TODO: make layout fully responsive and add semantic landmarks where appropriate.
+  -->
+</html>

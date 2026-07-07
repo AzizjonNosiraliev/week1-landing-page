@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  border: 2px solid black;
+}
+span {
+  background-color: yellow;
+  padding: 5px;
+}
+
+/*inline itself does not allow to change width and height and block display 
+which is default display, things do not allign in one line instead each element 
+take full width available and others will stack under it that is why it is useful to use 
+inline-block to be able to set width and height to an object while keeping them in one line*/

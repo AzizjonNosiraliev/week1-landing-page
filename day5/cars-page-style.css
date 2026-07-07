@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: gray;
+  color: white;
+}
+/* REVIEW: Using `height: 100%` on body doesn't guarantee full viewport height unless html is also 100%.
+   Consider `min-height: 100vh` for full-page backgrounds and better cross-browser behavior. */
+.head {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5b5a5a;
+}
+/* REVIEW: Large horizontal padding (50px) may cause overflow on small screens. Consider responsive padding or a max-width container. */
+.zhb {
+  color: white;
+  background-color: red;
+  margin-right: 10px;
+  border: 3px solid #820505;
+}
+.cars {
+  color: black;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+/* REVIEW: Using flex on <ul> is fine, but `justify-content: space-between` will push first/last to edges.
+   For navs, `gap` + `align-items` often suffices. Also consider vertical stacking on small screens. */
+li {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.parent {
+  margin: 200px 0;
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+}
+/* REVIEW: `margin: 200px 0` creates a very large vertical gap that may hide content on smaller viewports.
+   Prefer smaller spacing or responsive values (media queries or clamp()). */
+.container {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+/* REVIEW: Fixed widths/heights reduce responsiveness. Use max-width, auto height, or relative units (%, rem, vw).
+   Consider `aspect-ratio` for consistent card sizing and let content determine height when possible. */
+img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+/* REVIEW: For images, add `object-fit: cover; display: block;` to avoid stretching and remove default inline spacing.
+   Also, avoid fixed pixel heights for better responsiveness (or use aspect-ratio). */
+.desc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 90%;
+  gap: 20px;
+  color: black;
+}
+/* REVIEW: Combining `margin-left:10px` and `width:90%` inside a fixed-width container may cause overflow.
+   Consider padding within `.container` or use box-sizing to manage inner spacing. */
+h3 {
+  font-size: 30px;
+}
+.frari {
+  color: red;
+}
+.lambo {
+  color: green;
+}
+.porsh {
+  color: blue;
+}
+.bgati {
+  color: rgb(255, 191, 0);
+}
+footer {
+  background-color: #979595;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+/* REVIEW: Add responsive breakpoints (media queries) to stack `.container` cards on small screens
+   and adjust paddings/margins. */
